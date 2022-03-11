@@ -2,9 +2,9 @@
  * @name PerksNitroPRO
  * @author VaguerStone
  * @version 1.0.0
- * @description Perks Discord Sin Pagar
- * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/EditUsers/
- * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Plugins/EditUsers/EditUsers.plugin.js
+ * @description Discord Nitro Perks Sin tener que pagar
+ * @source https://github.com/vaguerstone/PerksNitro/blob/main/PerksNitro.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/vaguerstone/PerksNitro/Releases/PerksNitro.plugin.js
  */
 
  module.exports = (() => {
