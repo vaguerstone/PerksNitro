@@ -32,7 +32,7 @@ module.exports = (() => {
         "info": {
             "name": "PerksNitro",
             "authors": [{
-                "name": "Shimoro Update Edition",
+                "name": "Shimoro Updated Edition",
             },
 			{
                 "name": "Update 2022",
