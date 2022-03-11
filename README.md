@@ -11,12 +11,13 @@ Con la ayuda de este plugin podrás:
 # Instalacion
 
 1. Descargar [Better Discord](https://betterdiscord.app)
-2. Después de configurarlo, abra Configuración de usuario, desplácese hacia abajo hasta que encuentre la opción Complementos y haga clic en Abrir carpeta de complementos
-3. Descargue el [Plugin](https://github.com/vaguerstone/PerksNitro/archive/refs/heads/main.zip) y suelte los archivos del complemento dentro de la carpeta
-4. Encienda el complemento y activa tus opciones preferidas :)
+2. Después de configurarlo, abra **Configuración De Usuario** , desplácese hacia abajo hasta que encuentre la opción **Plugins** y haga clic en **Abrir Carpeta De Plugins**
+3. Descargue el [Plugin](https://github.com/vaguerstone/PerksNitro/archive/refs/heads/main.zip) y suelte los archivos del **Plugin** dentro de la carpeta
+4. Encienda el Plugin y activa tus opciones preferidas :)
 
 # Actualizaciones
 
 ### v2.0.0 [11/03/2022]
 
-* Actualizacion del plugin para la nueva version de better discord, ahora funcionan todas las opciones del plugin.
+* Actualizacion del plugin , ahora es compatible con la nueva version de **BetterDiscord** 
+* Actualmente estamos trabajando para solucionar el avatar del perfil y el banner de perfil.
