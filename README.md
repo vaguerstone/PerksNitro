@@ -12,7 +12,7 @@ Con la ayuda de este plugin podrás:
 
 1. Descargar [Better Discord](https://betterdiscord.app)
 2. Después de configurarlo, abra Configuración de usuario, desplácese hacia abajo hasta que encuentre la opción Complementos y haga clic en Abrir carpeta de complementos
-3. Descargue el [complemento](https://github.com/vaguerstone/PerksNitro/blob/main/PerksNitro.plugin.js) y suelte los archivos del complemento dentro de la carpeta
+3. Descargue el [complemento](https://raw.githubusercontent.com/vaguerstone/PerksNitro/main/PerksNitro.plugin.js) (Click Derecho y Guardar como)  y suelte los archivos del complemento dentro de la carpeta
 4. Encienda el complemento y activa tus opciones preferidas :)
 
 # Actualizaciones
