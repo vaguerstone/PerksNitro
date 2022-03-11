@@ -1,8 +1,8 @@
 /**
  * @name PerksNitro
- * @website https://github.com/Shimoro-Rune/PerksNitro
- * @source https://raw.githubusercontent.com/Shimoro-Rune/PerksNitro/main/PerksNitro.plugin.js
- * @updateUrl https://raw.githubusercontent.com/Shimoro-Rune/PerksNitro/main/PerksNitro.plugin.js
+ * @website https://github.com/vaguerstone/PerksNitro
+ * @source https://raw.githubusercontent.com/vaguerstone/PerksNitro/main/PerksNitro.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/vaguerstone/PerksNitro/main/PerksNitro.plugin.js
  */
 /*@cc_on
 @if (@_jscript)
@@ -32,12 +32,12 @@ module.exports = (() => {
         "info": {
             "name": "PerksNitro",
             "authors": [{
-                "name": "Shimoro Updated Edition",
+                "name": "VaguerStone",
             },
 			{
-                "name": "Update 2022",
+                "name": "Traducido al español Update 2022",
             }],
-            "version": "1.3.8",
+            "version": "2.0.0",
             "description": "¡Establezca un avatar animado y un banner de perfil del lado del cliente, comparta su pantalla a 60 fps 1080P y use emojis animados y entre servidores en todas partes! Sin embargo, aún no podrá cargar archivos de 100 MB :( ",
         },
 		"changelog": [
@@ -79,12 +79,12 @@ module.exports = (() => {
 			return config.changelog;
 		}
         load() {
-            BdApi.showConfirmationModal("Library Missing", `The library plugin needed for ${config.info.name} is missing. Please click Download Now to install it.`, {
-                confirmText: "Download Now",
-                cancelText: "Cancel",
+            BdApi.showConfirmationModal("Falta la biblioteca", `El complemento de biblioteca necesario para ${config.info.name} Está perdido. Haga clic en Descargar para instalarlo.`, {
+                confirmText: "Descargar",
+                cancelText: "Cancelar",
                 onConfirm: () => {
-                    require("request").get("https://rauenzi.github.io/BDPluginLibrary/release/0PluginLibrary.plugin.js", async (error, response, body) => {
-                        if (error) return require("electron").shell.openExternal("https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js");
+                    require("request").get("https://github.com/Shimoro-Rune/NitroPerks/files/8188546/OnesPluginLibrary-main.zip", async (error, response, body) => {
+                        if (error) return require("electron").shell.openExternal("https://betterdiscord.net/ghdl?url=hhttps://github.com/Shimoro-Rune/NitroPerks/files/8188546/OnesPluginLibrary-main.zip");
                         await new Promise(r => require("fs").writeFile(require("path").join(BdApi.Plugins.folder, "0PluginLibrary.plugin.js"), body, r));
                     });
                 }
@@ -116,34 +116,34 @@ module.exports = (() => {
                 screenShareFix;
                 getSettingsPanel() {
                     return Settings.SettingPanel.build(_ => this.saveAndUpdate(), ...[
-                        new Settings.SettingGroup("Features").append(...[
-                            new Settings.Switch("High Quality Screensharing", "Enable or disable 1080p/source @ 60fps screensharing. This adapts to your current nitro status.", this.settings.screenSharing, value => this.settings.screenSharing = value)
+                        new Settings.SettingGroup("Caracteristicas").append(...[
+                            new Settings.Switch("Uso compartido de pantalla de alta calidad", "Habilite o deshabilite el uso compartido de pantalla de 1080p/fuente a 60 fps. Esto se adapta a su estado actual de nitro.", this.settings.screenSharing, value => this.settings.screenSharing = value)
                         ]),
                         new Settings.SettingGroup("Emojis").append(
-                            new Settings.Switch("Nitro Emojis Bypass", "Enable or disable using the Nitro Emoji bypass.", this.settings.emojiBypass, value => this.settings.emojiBypass = value),
-                            new Settings.Slider("Size", "The size of the emoji in pixels. 40 is recommended.", 16, 64, this.settings.emojiSize, size=>this.settings.emojiSize = size, {markers:[16,20,32,40,64], stickToMarkers:true})
+                            new Settings.Switch("Nitro Emojis Bypass", "Habilita o deshabilita el uso de la omisión de Nitro Emoji.", this.settings.emojiBypass, value => this.settings.emojiBypass = value),
+                            new Settings.Slider("Tamano", "El tamano del emoji en pixeles. Se recomienda 40.", 16, 64, this.settings.emojiSize, size=>this.settings.emojiSize = size, {markers:[16,20,32,40,64], stickToMarkers:true})
                         ),
-						new Settings.SettingGroup("Profile Avatar").append(...[
-							new Settings.Switch("Clientsided Profile Avatar", "Enable or disable clientsided profile avatar.", this.settings.clientsidePfp, value => this.settings.clientsidePfp = value),
-							new Settings.Textbox("URL", "The direct URL to the profile avatar you want (PNG, JPG or GIF; square image is recommended).", this.settings.pfpUrl,
+						new Settings.SettingGroup("Avatar de perfil").append(...[
+							new Settings.Switch("Avatar de perfil del lado del cliente", "Habilita o deshabilita el avatar del perfil del lado del cliente.", this.settings.clientsidePfp, value => this.settings.clientsidePfp = value),
+							new Settings.Textbox("URL", "La URL directa al avatar de perfil que desea (PNG, JPG o GIF; se recomienda una imagen cuadrada).", this.settings.pfpUrl,
 								image => {
 									try {
 										new URL(image)
 									} catch {
-										return Toasts.error('This is an invalid URL!')
+										return Toasts.error('Esta es una URL Inválida!')
 									}
 									this.settings.pfpUrl = image
 								}
 							)
 						]),
-						new Settings.SettingGroup("Profile Banner").append(...[
-                                new Settings.Switch("Clientsided Profile Banner", "Enable or disable clientsided profile banner.", this.settings.clientsideBanner, value => this.settings.clientsideBanner = value),
-                                new Settings.Textbox("URL", "The direct URL to the profile banner you want (PNG, JPG or GIF; 600x240 size is recommended).", this.settings.bannerUrl,
+						new Settings.SettingGroup("Banner del perfil").append(...[
+                                new Settings.Switch("Banner de perfil del lado del cliente", "Habilita o deshabilita el banner de perfil del lado del cliente.", this.settings.clientsideBanner, value => this.settings.clientsideBanner = value),
+                                new Settings.Textbox("URL", "La URL directa al banner de perfil que desea (PNG, JPG o GIF; se recomienda un tamaño de 600x240).", this.settings.bannerUrl,
                                     image => {
                                         try {
                                             new URL(image)
                                         } catch {
-                                            return Toasts.error('This is an invalid URL!')
+                                            return Toasts.error('Esta es una URL Inválida!')
                                         }
                                         this.settings.bannerUrl = image
                                     }
