@@ -17,6 +17,6 @@ Con la ayuda de este plugin podrás:
 
 # Actualizaciones
 
-### v1.3.8 [11/03/2022]
+### v2.0.0 [11/03/2022]
 
 * Actualizacion del plugin para la nueva version de better discord, ahora funcionan todas las opciones del plugin.
