@@ -17,7 +17,7 @@ Con la ayuda de este plugin podrás:
 
 # Actualizaciones
 
-### v2.0.0 [11/03/2022]
+### v1.0.0 [11/03/2022]
 
 * Actualizacion del plugin , ahora es compatible con la nueva version de **BetterDiscord** 
 * Actualmente estamos trabajando para solucionar el avatar del perfil y el banner de perfil.
