@@ -1,7 +1,7 @@
 /**
  * @name PerksNitroPRO
  * @author VaguerStone
- * @version 1.0.0
+ * @version 0.0.1
  * @description Discord Nitro Perks Sin tener que pagar
  * @source https://github.com/vaguerstone/PerksNitro/blob/main/PerksNitro.plugin.js
  * @updateUrl https://raw.githubusercontent.com/vaguerstone/PerksNitro/Releases/PerksNitro.plugin.js
@@ -17,7 +17,7 @@
  			{
                  "name": "Nueva Version al español y fixeada",
              }],
-             "version": "1.0.0",
+             "version": "0.0.1",
              "description": "¡Coloca un banner de perfil animado o fijo, comparte tu pantalla a 60 fps 1080P y usa emojis animados entre servidores en todas partes! , Aun no se pueden subir archivos de mas de 100MB :c ",
          },
  		"changelog": [
@@ -30,7 +30,7 @@
  			},
  			{
  				"title": "Solucionando",
- 				"type": "fixed",
+ 				"type": "progress",
  				"items": [
  					"Fixeando el banner de perfil y avatar!"
  				]
@@ -82,7 +82,7 @@
 							Toasts,
 							PluginUtilities
 					} = Api;
-					return class PerksNitro extends Plugin {
+					return class PerksNitroPRO extends Plugin {
 							defaultSettings = {
 									"emojiSize": "40",
 									"screenSharing": false,
