@@ -13,7 +13,7 @@ Con la ayuda de este plugin podrás:
 1. Descargar [Better Discord](https://betterdiscord.app)
 2. Después de configurarlo, abra **Configuración De Usuario** , desplácese hacia abajo hasta que encuentre la opción **Plugins** y haga clic en **Abrir Carpeta De Plugins**
 3. Descargue el [Plugin](https://github.com/vaguerstone/PerksNitro/archive/refs/heads/main.zip) y suelte los archivos del **Plugin** dentro de la carpeta
-4. Descargue el [Plugin](https://github.com/vaguerstone/0PluginLibrary.plugin.js/archive/refs/heads/main.zip) Para evitar problemas de compatibilidad 
+4. Descargue el [Plugin Repositorio](https://github.com/vaguerstone/0PluginLibrary.plugin.js/archive/refs/heads/main.zip) Para evitar problemas de **compatibilidad**
 5. Encienda el Plugin y activa tus opciones preferidas :)
 
 # Actualizaciones
